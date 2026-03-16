@@ -1,3 +1,5 @@
+import sys
+import os
 """
 Lab 2 — Learner Test File
 
@@ -8,7 +10,7 @@ Write your own pytest tests here. You must implement at least 3 test functions:
 
 The autograder will run your tests as part of the CI check.
 """
-
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 import pandas as pd
 import numpy as np
 import pytest
